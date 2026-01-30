@@ -18,6 +18,7 @@ import test5 from "@/assets/test5.jpg";
 import test6 from "@/assets/test6.jpg";
 import test7 from "@/assets/test7.jpg";
 import test8 from "@/assets/test5.jpg";
+
 import FadeIn from "@/transitions/FadeIn.js";
 import Cardhovereffect from "@/transitions/cardhovereffect.js"
 
@@ -159,6 +160,7 @@ const PortfolioSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {testimonials.map((item, idx) => (
+
                <FadeIn delay={1.8}>
                 <Cardhovereffect>
               <div
@@ -190,7 +192,9 @@ const PortfolioSection = () => {
               </div>
               </Cardhovereffect>
               </FadeIn>
-            ))}
+
+
+     ))}
           </div>
         </section>
       </div>
