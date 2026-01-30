@@ -5,6 +5,7 @@ import Bigimg2 from "@/assets/Bigimg2.png";
 import Bigimg3 from "@/assets/Bigimg3.png";
 import Bigimg4 from "@/assets/Bigimg4.png";
 import FadeIn from "@/transitions/FadeIn.tsx";
+import Cardhovereffect from "@/transitions/cardhovereffect"
 
 
 interface Project {
@@ -28,6 +29,7 @@ const ProjectCardContent: React.FC<{ project: Project }> = ({ project }) => {
     <>
       {/* Desktop View */}
       <FadeIn delay={1.8}>
+        <Cardhovereffect>
         <div className="glass-card gradient-border rounded-2xl relative overflow-hidden my-4 group 
           min-h-[307px] h-auto md:h-[307px] w-full md:mr-4 p-4 md:p-6 
           grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4 md:gap-6 items-center hidden md:grid">
@@ -58,6 +60,7 @@ const ProjectCardContent: React.FC<{ project: Project }> = ({ project }) => {
             <img src={Floatingimg} alt={project.title} className="floating-img" />
           </div>
         </div>
+        </Cardhovereffect>
       </FadeIn>
 
       {/* Mobile View */}
